@@ -17,6 +17,12 @@ touch init.el
 write content:
 
 ```elisp
+;;; mac cmd key for meta
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
+      
 ;; xxx~ file save to ~/.emacs.d/.saves directory
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 ```
