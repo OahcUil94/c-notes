@@ -31,6 +31,7 @@ Vagrant.configure("2") do |config|
       config.vm.synced_folder "d:/code/", "/home/vagrant/code/", type: "nfs"
     elsif OS.mac?
       puts "=======Vagrant launched from mac======="
+      config.vm.synced_folder "~/code/", "/home/vagrant/code/", type: "nfs"
     elsif OS.linux?
       puts "=======Vagrant launched from linux======="
     else

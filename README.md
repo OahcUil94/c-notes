@@ -44,5 +44,5 @@ config.vbguest.auto_update = false
 exec command:
 ```bash
 vagrant up
-vagrant vbguest
+vagrant vbguest --auto-reboot --no-provision
 ```
