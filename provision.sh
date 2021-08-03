@@ -71,3 +71,10 @@ then
   groupadd docker
 fi
 usermod -aG docker vagrant
+
+echo '====install python 3.9===='
+apt install -y software-properties-common
+add-apt-repository ppa:deadsnakes/ppa
+apt update
+apt install python3.9
+python3.9 -V
