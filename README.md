@@ -51,4 +51,6 @@ exec command:
 ```bash
 vagrant up
 vagrant vbguest --auto-reboot --no-provision
+# no reboot need manual deal 
+# vagrant reload
 ```
